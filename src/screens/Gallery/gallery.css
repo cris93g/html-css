@@ -1,0 +1,89 @@
+:root {
+	--white: #ffffff;
+	--black: #000000;
+	--center: center;
+	--backgroundRepeat: no-repeat;
+	--fontFamily: 'Poppins', sans-serif;
+}
+
+.classContainer {
+	width: 90vw;
+	height: 70vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch;
+	margin: auto;
+}
+.card {
+	margin: auto;
+	box-shadow: 0px 4px 4px var(--black);
+	transition: 0.3s ease-in;
+	background-color: #324359 !important;
+	border: 1px solid var(--black);
+	width: 350px;
+	height: 200px;
+}
+#pic1 {
+	background-image: url(https://cdn.player.one/sites/player.one/files/2020/03/18/lol-banner.jpg);
+	background-position: var(--center);
+	background-repeat: var(--backgroundRepeat);
+	background-size: cover;
+}
+#pic2 {
+	background-image: url(https://www.activision.com/content/dam/atvi/callofduty/cod-touchui/mw2-remastered/common/mw2cr-social-share-image.jpg);
+	background-position: var(--center);
+	background-repeat: var(--backgroundRepeat);
+	background-size: cover;
+}
+#pic3 {
+	background-image: url(https://d28ipuewd7cdcq.cloudfront.net/assets/article/2020/01/31/pokemon-sword-and-shield_feature.jpg);
+	background-position: var(--center);
+	background-repeat: var(--backgroundRepeat);
+	background-size: cover;
+}
+#pic4 {
+	background-image: url(https://i.redd.it/qrzqyn8rpagz.jpg);
+	background-position: var(--center);
+	background-repeat: var(--backgroundRepeat);
+	background-size: cover;
+}
+#pic5 {
+	background-image: url(https://images-cdn.fantasyflightgames.com/filer_public/ef/9f/ef9f166a-ed82-4dd9-8eb9-d19d76cf983d/ge01_preview.jpg);
+	background-position: var(--center);
+	background-repeat: var(--backgroundRepeat);
+	background-size: cover;
+}
+#pic6 {
+	background-image: url(https://i0.wp.com/www.nintendo-insider.com/wp-content/uploads/2015/09/mario-party-island-tour-banner.jpg?fit=1920%2C700&ssl=1);
+	background-position: var(--center);
+	background-repeat: var(--backgroundRepeat);
+	background-size: cover;
+}
+.card p {
+	font-size: 0.7em;
+	color: #ccc !important;
+}
+
+.card a {
+	font-size: 0.7em;
+}
+
+.card:hover {
+	transform: scale(1.09);
+}
+
+@media screen and (max-width: 768px) {
+	.card {
+		margin-top: 10%;
+		width: 250px;
+		height: 150px;
+	}
+}
+
+.gallery_header {
+	text-align: center;
+	font-family: var(--fontFamily);
+}
