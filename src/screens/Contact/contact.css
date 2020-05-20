@@ -1,3 +1,4 @@
+/* -----------------------------------------------VARIABLES--------------------------------------------------------------- */
 :root {
 	--white: #f7f7f7;
 	--bodyColor: #ffffff;
@@ -94,8 +95,7 @@ body {
 	margin: 0 auto;
 	text-align: center;
 }
-
-/* mediaqueriessssssssssssssssssssssssssssssssssssssssssssssssssss */
+/* -------------------------------------------------Media Queries----------------------------------------------------------- */
 @media screen and (min-width: 600px) {
 	.my-form .firstInp {
 		display: grid;

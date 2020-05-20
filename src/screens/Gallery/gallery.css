@@ -1,3 +1,4 @@
+/* -----------------------------------------------VARIABLES--------------------------------------------------------------- */
 :root {
 	--white: #ffffff;
 	--black: #000000;
@@ -74,13 +75,17 @@
 .card:hover {
 	transform: scale(1.09);
 }
-
+/* -------------------------------------------------Media Queries----------------------------------------------------------- */
 @media screen and (max-width: 768px) {
 	.card {
 		margin-top: 10%;
 		width: 250px;
 		height: 150px;
 	}
+
+.card:hover {
+	transform: scale(1.09);
+}
 }
 
 .gallery_header {
