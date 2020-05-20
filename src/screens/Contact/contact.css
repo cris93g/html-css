@@ -1,0 +1,128 @@
+/* -----------------------------------------------VARIABLES--------------------------------------------------------------- */
+:root {
+	--white: #f7f7f7;
+	--bodyColor: #ffffff;
+	--border: #8f8888;
+	--bgForm: #ffffff;
+	--bgFormFocus: #eae4fa;
+	--black: #000000;
+	--bold: bold;
+	--bottomMargin: 1.5rem;
+	--fontFamily: 'Poppins', sans-serif;
+}
+
+input,
+textarea,
+button {
+	font-family: inherit;
+	font-size: 100%;
+}
+
+button,
+label {
+	cursor: pointer;
+}
+
+textarea {
+	resize: none;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	font-family: var(--fontFamily);
+	background: var(--bodyColor);
+	color: var(--black);
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 var(--bottomMargin);
+}
+
+.my-form h1 {
+	margin-bottom: var(--bottomMargin);
+}
+
+.my-form li,
+.my-form .firstInp > *:not(:last-child) {
+	margin-bottom: var(--bottomMargin);
+}
+
+.my-form input,
+.my-form textarea,
+.my-form button {
+	width: 100%;
+	line-height: 1.5;
+	padding: 15px 10px;
+	border: 1px solid var(--border);
+	color: var(--black);
+	background: var(--bgForm);
+	font-weight: var(--bold);
+}
+
+.my-form textarea {
+	height: 200px;
+}
+
+.my-form input:focus,
+.my-form textarea:focus,
+.my-form button:enabled:hover,
+.my-form button:focus,
+.my-form input[type="checkbox"]:focus + label {
+	background: var(--bgFormFocus);
+}
+
+.my-form select {
+	background-repeat: no-repeat;
+	background-position: center right 12px;
+	background-size: 15px 15px;
+}
+
+.my-form *:disabled {
+	cursor: default;
+	filter: blur(2px);
+}
+
+.my-form button {
+	font-weight: bold;
+}
+
+.titleHeader {
+	margin: 0 auto;
+	text-align: center;
+}
+/* -------------------------------------------------Media Queries----------------------------------------------------------- */
+@media screen and (min-width: 600px) {
+	.my-form .firstInp {
+		display: grid;
+		grid-gap: var(--bottomMargin);
+	}
+
+	.my-form .secInp {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.my-form .bottomWrapper {
+		grid-template-columns: auto;
+		align-items: center;
+	}
+
+	.my-form .firstInp > *:not(:last-child) {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 541px) {
+	.my-form input[type="checkbox"] + label::before {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.my-form input[type="checkbox"]:checked + label::after {
+		top: 3px;
+	}
+}
